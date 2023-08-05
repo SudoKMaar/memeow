@@ -1,0 +1,179 @@
+:root {
+  font-family: "Impact", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #1c1c1c;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 7vh;
+  color: white;
+  padding: 3px;
+  background: linear-gradient(to right, #ff9f00, #ff005a);
+}
+
+.headerImage {
+  height: 100%;
+  margin-right: 10px;
+}
+
+.headerTitle {
+  font-size: 3rem;
+  margin-right: auto;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #5cff4d;
+  transition: 0.2s ease-in-out;
+}
+
+.main {
+  height: 90vh;
+  overflow: auto;
+  scroll-behavior: smooth;
+  overflow: hidden auto;
+  background: linear-gradient(to right, #ff9f00, #ff005a);
+  padding: 5px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.form {
+  margin-top: 5px;
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 17px;
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.formInput {
+  border-radius: 5px;
+  border: 3px solid #d5d4d8;
+  text-indent: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  color: #333;
+}
+
+.formInput:focus {
+  outline: none;
+  border-color: #ff9f00;
+}
+.formButton {
+  grid-column: 1 / -1;
+  padding: 7px;
+  border-radius: 4px 4px 5px 5px;
+  border-top: none;
+  border: 2.5px solid black;
+  background-color: #ff9f00;
+  color: white;
+  box-shadow: 4px 4px black;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+.formButton:active {
+  transform: scale(0.95) rotate(360deg);
+}
+.formButton:hover {
+  transform: translate(2px, 2px) scale(0.99);
+  box-shadow: 0 0 black;
+}
+
+.loading {
+  max-width: 50%;
+  margin: auto;
+}
+
+.cat {
+  position: relative;
+  display: flex;
+}
+
+.catImage {
+  max-width: 800px;
+  margin: auto;
+  width: 100%;
+  border-radius: 3px;
+  animation: floating 1s ease-in-out infinite alternate;
+}
+@keyframes floating {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+
+.memeText {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-size: 3em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+  transition: color 0.2s ease-in-out;
+}
+.memeText:hover {
+  color: #5cff4d;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}
