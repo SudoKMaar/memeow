@@ -4,7 +4,7 @@ Memeow is a simple React application that allows you to generate cat-themed meme
 
 ## Demo
 
-You can see a live demo of Memeow [here](https://memeow.netlify.app).
+You can see a live demo of [Memeow](https://memeow.netlify.app).
 
 ## Features
 
